@@ -49,6 +49,14 @@ export default {
   background: transparent;
 }
 
+::placeholder {
+  color: rgb(223, 219, 219);
+}
+
+.fas {
+  color: rgb(223, 219, 219);
+}
+
 /* Search text */
 #txt {
   height: 56px;
@@ -56,5 +64,9 @@ export default {
   padding: 0 16px;
   border: 0;
   font-size: 1.5rem;
+  font-family: "fira sans", roboto, sans-serif;
+  font-weight: 400;
+  background: inherit;
+  color: rgb(223, 219, 219);
 }
 </style>

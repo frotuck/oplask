@@ -13,6 +13,7 @@ export async function getImages(terms) {
   } catch (error) {
     console.log(error)
   }
+
 }
 
 // export async function getSearchImages() {

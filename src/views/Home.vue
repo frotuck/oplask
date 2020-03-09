@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" />
+    <Header />
     <search />
   </div>
 </template>
@@ -9,6 +9,7 @@
 // @ is an alias to /src
 // import { getImages } from "@/module/search";
 import Search from "@/components/Search";
+import Header from "@/components/Header";
 
 export default {
   name: "Home",
@@ -16,7 +17,7 @@ export default {
     // getImages().then(res => console.log(res));
     // getSearchImages().then(res => console.log(res));
   },
-  components: { Search }
+  components: { Search, Header }
 };
 </script>
 
@@ -25,5 +26,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+:root {
+  background: #222;
 }
 </style>
