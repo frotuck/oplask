@@ -12,9 +12,25 @@ import Search from "@/components/Search";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      loading: false,
+      tag: "",
+      images: []
+    };
+  },
   components: { Search },
   mounted() {
     getImages().then(res => console.log(res));
+  },
+  methods: {
+    search() {
+      this.loading = true;
+      this.getImages().then(response => {
+        this.images = response.data.photos.photo;
+        this.loading = false;
+      });
+    }
   }
 };
 </script>
