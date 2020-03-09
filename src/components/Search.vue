@@ -25,7 +25,7 @@ export default {
   methods: {
     searchInput() {
       console.log("hej från searchInput " + this.searchQuery);
-      getImages();
+      getImages(this.searchQuery);
     }
   }
 };

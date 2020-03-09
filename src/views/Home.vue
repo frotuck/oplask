@@ -7,13 +7,13 @@
 
 <script>
 // @ is an alias to /src
-import { getImages } from "@/module/search";
+// import { getImages } from "@/module/search";
 import Search from "@/components/Search";
 
 export default {
   name: "Home",
   mounted() {
-    getImages().then(res => console.log(res));
+    // getImages().then(res => console.log(res));
     // getSearchImages().then(res => console.log(res));
   },
   components: { Search }
