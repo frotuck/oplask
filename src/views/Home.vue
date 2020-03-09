@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import { getImages } from "@/module/search";
+import { getImages } from "@/module/apiRequest";
 import Search from "@/components/Search";
 
 export default {
