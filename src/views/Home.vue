@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
     <img alt="Vue logo" src="@/assets/logo.png" />
     <search />
   </div>
@@ -15,8 +14,9 @@ export default {
   name: "Home",
   mounted() {
     getImages().then(res => console.log(res));
+    // getSearchImages().then(res => console.log(res));
   },
-  components: { Search },
+  components: { Search }
 };
 </script>
 
